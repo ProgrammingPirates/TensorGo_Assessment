@@ -8,7 +8,7 @@ import argparse
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-openai.api_key = os.environ.get('OPENAI_API_KEY', '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')
+openai.api_key = os.environ.get('OPENAI_API_KEY', '')
 
 def read_and_parse_csv(file_path):
     """
