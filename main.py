@@ -8,7 +8,7 @@ import argparse
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-openai.api_key = os.environ.get('OPENAI_API_KEY', '')
+openai.api_key = os.environ.get('OPENAI_API_KEY', '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')
 
 def read_and_parse_csv(file_path):
     """
@@ -149,7 +149,7 @@ def main():
         ]
 
         for question in questions:
-            gpt3_response = ask_gpt3_about_data_general(question)
+            gpt3_response = ask_gpt3_about_data_general(question, openai.api_key)
             logger.info("\nGPT-3 Response for '%s':\n%s", question, gpt3_response)
 
     else:
