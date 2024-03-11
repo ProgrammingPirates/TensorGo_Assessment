@@ -52,4 +52,4 @@ Discuss potential future improvements or features that could enhance the applica
 - pip install -r requirements.txt
 
 - python main.py data/sample_data.csv --save_plots --plot_path plots
-# TensorGo_Assessment
+
